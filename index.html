@@ -11,17 +11,100 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class=" font-popins">
+    
+<main class="min-h-screen bg-[#1E1E1E] bg-[url(images/background.png)] bg-no-repeat bg-center">
+    <!-- home screen -->
+    <section class="home min-h-screen text-white flex  justify-center items-center  ">
+        <div class="flex flex-col items-center gap-7">
+            <h2 class="text-6xl font-anton uppercase font-bold ">Alpha clash pro</h2>
+        <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+        <button onclick="play()" class="btn text-black">play</button>
+        </div>
+         </section>
+         <!-- playground start -->
+         <section class="playGround hidden">
+            <div  class="flex flex-col items-center gap-16 pt-16">
+                <!-- screen  -->
+                <div class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3] ">
+
+                    <div class="flex justify-center">
+                        <p class="bg-[#2F2941] text-white p-2 rounded-b-xl ">Don't watch keyboard  while playing...</p>
+                    </div>
+                    <div class="flex justify-center items-center h-full">
+                        <p class="text-9xl text-black font-bold">Y</p>
+                    </div>
+                </div>
+                <!-- KeyBoard start  -->
+                <div>
+
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">q</kbd>
+                        <kbd class="kbd">w</kbd>
+                        <kbd class="kbd">e</kbd>
+                        <kbd class="kbd">r</kbd>
+                        <kbd class="kbd">t</kbd>
+                        <kbd class="kbd">y</kbd>
+                        <kbd class="kbd">u</kbd>
+                        <kbd class="kbd">i</kbd>
+                        <kbd class="kbd">o</kbd>
+                        <kbd class="kbd">p</kbd>
+                      </div> 
+                      <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">a</kbd>
+                        <kbd class="kbd">s</kbd>
+                        <kbd class="kbd">d</kbd>
+                        <kbd class="kbd">f</kbd>
+                        <kbd class="kbd">g</kbd>
+                        <kbd class="kbd">h</kbd>
+                        <kbd class="kbd">j</kbd>
+                        <kbd class="kbd">k</kbd>
+                        <kbd class="kbd">l</kbd>
+                      </div> 
+                      <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">z</kbd>
+                        <kbd class="kbd">x</kbd>
+                        <kbd class="kbd">c</kbd>
+                        <kbd class="kbd">v</kbd>
+                        <kbd class="kbd">b</kbd>
+                        <kbd class="kbd">n</kbd>
+                        <kbd class="kbd">m</kbd>
+                        <kbd class="kbd">/</kbd>
+                      </div>
+
+                </div>
+                <!-- KeyBoard end  -->
+                <!-- live score -->
+                <div class="flex justify-between w-1/2">
+                    <button class="btn bg-[#894189] text-white rounded-full">
+                       
+                        Button
+                        <img src="images/heart (1).svg" alt="">
+                        <span>1</span>
+                      </button>
+
+                      <button class="btn bg-[#360490] text-white rounded-full">
+                        
+                        Button
+                        <img src="images/dollar.svg" alt="">
+                        <span>1</span>
+                      </button>
+                </div>
+            </div>
+     
+         </section>
+         <!-- score section -->
+         <section class="score flex justify-center  min-h-screen items-center hidden">
+            <div class="text-white text-center space-y-6 bg-[#FFFFFF33] p-5 rounded-2xl ">
+                <h1 class="text-8xl"><span class="font-extrabold"> Score :</span> 14</h1>
+                <button class="btn bg-black text-white">Play Now</button>
+                <p>Practice will make you Pro</p>
+            </div>
+     
+         </section>
+</main>
     
 
-    <section class="home">
-   <h2 class="text-2xl">hello</h2>
-    </section>
-    <section class="playGround">
-
-    </section>
-    <section class="score">
-
-    </section>
+<script src="alfa-clash.js"></script>
 </body>
 </html>
